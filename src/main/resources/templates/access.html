@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${title}">Title</h1>
+    <p class="alert alert-error">Access denied:
+        you do not have permission for that resource</p>
+    <div th:text="${message}">Fake content</div>
+    <div>Please contact the operator with the above information.</div>
+</div>
+</body>
+</html>
